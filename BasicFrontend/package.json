@@ -1,0 +1,12 @@
+{
+  "name": "basicfrontend",
+  "version": "1.0.0",
+  "description": "this will be the basic frontend to diplay my personal website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "elliot lee",
+  "license": "ISC",
+  "dependencies": {}
+}

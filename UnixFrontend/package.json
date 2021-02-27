@@ -1,0 +1,11 @@
+{
+  "name": "unixfrontend",
+  "version": "1.0.0",
+  "description": "\"this is going to be the display for my wesite as if it is a unix command line\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "elliot lee",
+  "license": "ISC"
+}
