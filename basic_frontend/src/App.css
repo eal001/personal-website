@@ -1,0 +1,103 @@
+.background_view {
+    background-color: #555555;
+    color: white;
+    height: 100vh; 
+    text-align: center;
+    overflow: hidden;
+}
+
+@keyframes staticIn {
+    0% {
+        opacity: 0;
+    }
+    50%{
+        transform: translateY(-300px);
+        opacity: 0;
+    }
+    50.05%{
+        opacity:0.5 ;
+    }
+    75% {
+        transform: translateY(1000px);
+        opacity: 0.75;
+    }
+    75.05%{
+        opacity: 0;
+    }
+    75.1%{
+        transform: translateY(-600px);
+        opacity: 0;
+    }
+    75.15%{
+        opacity: 0.5;
+    }
+    99.85%{
+        transform: translateY(-200px);
+        opacity: 0.75;
+    }
+    99.9% {
+        opacity: 0;
+    }
+    99.95%{
+        transform: translateY(0px);
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.intro_container {
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    background-color: black;
+    background-image: url("images/tv_static.gif");
+    margin: .5%;
+    width: 99%;
+    height: 98%;
+}
+
+.title_img {
+    position: relative;
+    animation: staticIn 750ms;
+    background-image: url("images/pirateTower_laguna.jpg");
+    background-size: cover;
+    width: 1920px;
+    height: 1280px;
+    z-index: 5;
+}
+
+.self_info_container {
+    position: absolute;
+    z-index: 10;
+    margin: 0;
+    content: "";
+    top: 60%;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background: #AAAAAA;
+    clip-path: polygon(0 25%, 0%  100%, 100% 100%, 100% 0%);
+}
+
+/*somewhere else */
+.side_bar {
+    float: left;
+    color:  darkred;
+    background-color: pink;
+    height: 99vh;
+    width: 10%;
+    margin: .5%;
+}
+
+.content_view {
+    float: left;
+    background-color: lightblue;
+    color: darkblue;
+    height: 99vh;
+    width: 88%;
+    margin-top: .5%;
+    margin-bottom: .5%;
+    margin-right: .5%;
+}
+

@@ -1,5 +1,5 @@
 {
-  "name": "desktopfrontend",
+  "name": "desktop_frontend",
   "version": "1.0.0",
   "description": "\"this will be the display for my website so it looks like a simple desktop\"",
   "main": "index.js",
