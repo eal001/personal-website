@@ -1,25 +1,16 @@
 import "./App.css";
-//import 
+import Parallax from "react-rellax";
 import IntroComponent from "./IntroComponent";
 
 function App() {
 
   return (
     <div className="App">
-      <div className="background_view" >
+      <IntroComponent />
         
-        <div className="intro_container">
-          <div className="title_img" >
-            <IntroComponent />
-          </div>
-        </div>
-        
-        <div className="self_info_container"></div>
-
-      </div>
-      
-    </ div>
-      
+      <Parallax className="self_info_container" speed={ 10 }> 
+      </Parallax>
+    </div>
   );
 }
 

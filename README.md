@@ -12,5 +12,5 @@ Ant Design
 
 ## Layout ##
 See the diagram
-I will implement all of hese designs in different folders of this project
+I will implement all of these designs in different folders of this project
 If i come up with more designs, then i will update the pdf

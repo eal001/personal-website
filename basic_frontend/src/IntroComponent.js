@@ -1,6 +1,5 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState } from 'react';
 import Typist from "react-typist";
-import { gsap } from 'gsap';
 import "./IntroComponent.css";
 
 const NAME = "Elliot Lee";
@@ -64,7 +63,10 @@ const IntroComponent = () => {
 
 
     return(
-        <>
+<div className="background_view">
+          <div className="intro_container">
+            <div className="title_img"> 
+              
         <div className="intro_text">
             <Typist cursor={cursor} >
                 <Typist.Delay blink={true} ms={TIMEOUT*2}/>
@@ -77,8 +79,6 @@ const IntroComponent = () => {
             </Typist>
         </div>
 
-        
-
         <div className="ht_container">
             <button className="ht_button" onMouseEnter={handleEnter} onMouseLeave={handleExit}>
                 <i className="material-icons" >info</i>
@@ -86,8 +86,10 @@ const IntroComponent = () => {
             <Hometown_Text isOpen={open}/>
             <div className="rounded_bar" style={{...bar_style, transform: "scaleX("+ scale +")"}} ></div>
         </div>
-        </>
-    )
+        </div>
+        </div>
+        </div>
+        )
 }
 
 
