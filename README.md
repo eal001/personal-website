@@ -14,3 +14,6 @@ react-typist
 See the diagram
 I will implement all of these designs in different folders of this project
 If i come up with more designs, then i will update the pdf
+
+## basic_frontend ##
+i have currently implemented a parralax view of laguna beach my name and three sections for a bit of description about me.
