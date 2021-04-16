@@ -7,8 +7,8 @@ This website is to be deployed on elliot-lee.dev that will describe my personal 
 Node.js
 React
 CSS
-Anime.js
-Ant Design
+react-rellax
+react-typist
 
 ## Layout ##
 See the diagram
