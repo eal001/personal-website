@@ -6,7 +6,7 @@ const NAME = "Elliot Lee";
 const DESCRIPTION = "Student Developer";
 const TIMEOUT = 1000;
 const HT_MESSAGE_1 = "Pirate Tower in Laguna Beach, CA."
-const HT_MESSAGE_2 = "A landmark    my hometown!"
+const HT_MESSAGE_2 = "A landmark near my hometown!"
 const CURSOR = {
     show: true,
     blink: true,
