@@ -1,3 +1,15 @@
+# Personal Website Design 2.0
+Author: Elliot Lee
+## Plan
+    I plan for this website to be similar to the first one, with a bit of a difference in development.
+    I am going to plan out the design before building.
+    I am going to plan out the division of code components before building.
+    I am going to develop with mobile view in mind first
+
+## Version Differences
+    No TV Static animation, it does not fit the theme that I have for this website.
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
