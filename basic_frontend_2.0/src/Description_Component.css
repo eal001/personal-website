@@ -1,9 +1,13 @@
 .description_component {
-    
+    background-color: #574945;
+    content: "";
+    width: 100%;
 }
 
 .description_box {
     background-color: #777777;
+    overflow: hidden;
+    padding-bottom: 10px;
 }
 
 .heading {
@@ -22,6 +26,17 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
+    border: 5px solid #574945
+}
+
+.ucsd_geisel {
+    margin: 25px;
+    width: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 5px solid #574945;
+    margin-bottom: 10px;
 }
 
 .description {
@@ -41,6 +56,11 @@
     font-weight: 1000;
 }
 
+.spacer {
+    position: relative;
+    height: 10px;
+}
+
 @media only screen and (min-width: 360px) {
 
     .head_shot_image {
@@ -48,12 +68,63 @@
         margin-right: 10px;
         margin-left: 5px;
     }
+    .ucsd_geisel {
+        float: right;
+        margin-right: 10px;
+        margin-left: 5px;
+    }
 
 }
 
-@media only screen and (min-width: 520px) {
+@media only screen and (min-width: 470px) {
     .head_shot_image {
-        height: 40%;
-        width: auto;
+        margin-left: 10%;
+        width: 20%;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .head_shot_image {
+        margin-left: 5%;
+        width: 10%;
+    }
+}
+
+
+/* this is the one where we switch from being horiozonatlly stacked to verically stacked*/
+@media only screen and (min-width: 700px) {
+    .description_component {
+        overflow: hidden;
+        position: relative;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    .description_box {
+        position: relative;
+        float: left;
+        width: 32%;
+    }
+    .head_shot_image {
+        float: none;
+        margin: 25px;
+        width: 190px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .ucsd_geisel {
+        float: none;
+        margin: 25px;
+        width: 190px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .spacer {
+        position: relative;
+        float: left;
+        content: "";
+        width: 1%;
+        height: 10px;
     }
 }

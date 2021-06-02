@@ -3,6 +3,7 @@
     content: "";
     height: 100%;
     width: 100%;
+    
 }
 
 .title_image_background {
@@ -54,7 +55,7 @@
     background-color: white;
     content:"";
     width: 220px; 
-    height: 3px;
+    height: 2px;
     right: 10%;
     transform-origin: top right;
     transition: all 250ms linear;
