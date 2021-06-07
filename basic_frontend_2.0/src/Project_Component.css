@@ -1,0 +1,79 @@
+.project_component {
+    background-color: #DDDDE6;
+    padding-top: 10px;
+    text-align: center;
+}
+.project_section_title {
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 38px;
+    font-weight: 900;
+    text-decoration: underline;
+    color: #000050;
+}
+
+.BiasML {
+    display: block;
+    background-color: aliceblue;
+    padding-top: 1px;
+    padding-bottom: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.BiasML_SSerafin {
+    width: 200px;
+    display: block;
+    margin: 25px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.RateMyLease {
+    display: block;
+    background-color: aliceblue;
+    padding-top: 1px;
+    padding-bottom: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.RateMyLease_JChoe {
+    width: 200px;
+    display: block;
+    margin-bottom: 25px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.WorkoutApp {
+    display: block;
+    background-color: aliceblue;
+    padding-top: 1px;
+    padding-bottom: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.WorkoutApp_Icon {
+    width: 200px;
+    display: block;
+    margin: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 3px solid #DDDDE6
+}
+
+
+.project_heading {
+    margin-top: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 24px;
+    text-decoration: underline;
+    color: #000050;
+    font-weight: 1000;
+}
+.project_description {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+    color: #000050;
+}
+
+@media only screen and (min-width: 500px) {
+   
+}
