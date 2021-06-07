@@ -23,17 +23,21 @@
 .head_shot_container{
     background-color: #574945;
     display: block;
-    margin-top: 5px;
+    margin-top: 10px;
     margin-bottom: 10px;
     margin-left: auto;
     margin-right: auto;
     width: 200px;
-    border: 5px solid #574957;
+    border: 5px solid #574945;
 }
 .head_shot_image {
     display: block;
     max-height: 100%;
     max-width: 100%;
+    transform: translate(-10px,-10px);
+}
+.head_shot_image:hover {
+    transform: translate(-8px, -8px);
 }
 
 .palette_container {
@@ -44,38 +48,47 @@
     margin-top: 5px;
     margin-bottom: 10px;
     display: block;
-    border: 5px solid #574957;
+    border: 5px solid #574945;
 }
 .palette_image {
     display: block;
     max-width: 100%;
     max-height: 100%;
+    transform: translate(10px,10px);
+}
+.palette_image:hover {
+    transform: translate(8px, 8px);
 }
 .palette_container_2 {
     display: none;
     float: none;
     margin-top: 20px;
+    margin-bottom: 10px;
     width: 80%;
     margin-left: auto;
     margin-right: auto;
     background-color: #574945;
-    border: 5px solid #574957;
+    border: 5px solid #574945;
 }
+
 .ucsd_geisel_container {
     width: 200px;
     display: block;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 10px;
-    margin-top: 5px;
+    margin-top: 10px;
     background-color: #574945;
-    border: 5px solid #574957;
+    border: 5px solid #574945;
 }
-
 .ucsd_geisel {
     display: block;
     max-width: 100%;
     max-height: 100%;
+    transform: translate(-10px,-10px);
+}
+.ucsd_geisel:hover {
+    transform: translate(-8px, -8px);
 }
 
 .description {
