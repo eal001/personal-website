@@ -29,6 +29,20 @@
     border: 5px solid #574945
 }
 
+.palette_image {
+    margin: 25px;
+    width: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 5px solid #574945
+}
+
+.palette_image_2 {
+    display: none;
+    border: 5px solid #574945
+}
+
 .ucsd_geisel {
     margin: 25px;
     width: 200px;
@@ -44,6 +58,7 @@
     text-align: center;
     font-size: 18px;
     color: white;
+    padding-top: 5px;
     padding-left: 5px;
     padding-right: 5px;
 }
@@ -64,12 +79,22 @@
 @media only screen and (min-width: 360px) {
 
     .head_shot_image {
+        width: 180px;
         float: left;
         margin-right: 10px;
         margin-left: 5px;
     }
-    .ucsd_geisel {
+
+    .palette_image {
+        width: 150px;
         float: right;
+        margin-right: 5px;
+        margin-left: 10px;
+    }
+
+    .ucsd_geisel {
+        float: left;
+        width:  180px;
         margin-right: 10px;
         margin-left: 5px;
     }
@@ -112,10 +137,21 @@
         margin-left: auto;
         margin-right: auto;
     }
+    .palette_image {
+        display: none;
+    }
+    .palette_image_2 {
+        float: none;
+        margin: 25px;
+        width: 80%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
     .ucsd_geisel {
         float: none;
         margin: 25px;
-        width: 190px;
+        width: 80%;
         display: block;
         margin-left: auto;
         margin-right: auto;

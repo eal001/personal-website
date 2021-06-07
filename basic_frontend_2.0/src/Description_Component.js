@@ -1,6 +1,7 @@
 import { findByLabelText } from "@testing-library/dom";
 import "./Description_Component.css";
 import HEAD_SHOT from "./images/My_head_2.1.png";
+import PALETTE from "./images/pexels-daian-gan-102127.jpg";
 import GEISEL from "./images/geisel_library.jpg";
 
 const About_Me_Box = () => {
@@ -39,12 +40,17 @@ const Mission_Box = () => {
     return (
         <div className="description_box" >
                 <p className="heading">Why I Code</p>
+                
+                <img className="palette_image" src={PALETTE} alt="Palette Daian Gan"></img>
                 <p className="description">
                     I was first introduced to coding through a high school course in Java. 
                     Immediately I loved it because it let me create practical, impactful products in a deeply personal way. 
+                    Like painting, it allows me to artistically exercise my imagination while also finding solutions to impactful problems.
                     I've never found another practice that melds creativity and practicality in such a way. 
-                    I am constantly looking to improve my skills in fullstack develoment. All criticism is appreciated.
+                    I am constantly looking to improve my skills in software develoment. All criticism is appreciated.
                 </p>
+                <img className="palette_image_2" src={PALETTE} alt="Palette Daian Gan"></img>
+                
             </div>
     )
 }
