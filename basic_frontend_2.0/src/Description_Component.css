@@ -20,37 +20,62 @@
     text-decoration: underline;
 }
 
+.head_shot_container{
+    background-color: #574945;
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    border: 5px solid #574957;
+}
 .head_shot_image {
-    margin: 25px;
-    width: 200px;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    border: 5px solid #574945
+    max-height: 100%;
+    max-width: 100%;
 }
 
+.palette_container {
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #574945;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    display: block;
+    border: 5px solid #574957;
+}
 .palette_image {
-    margin: 25px;
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+}
+.palette_container_2 {
+    display: none;
+    float: none;
+    margin-top: 20px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #574945;
+    border: 5px solid #574957;
+}
+.ucsd_geisel_container {
     width: 200px;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    border: 5px solid #574945
-}
-
-.palette_image_2 {
-    display: none;
-    border: 5px solid #574945
+    margin-bottom: 10px;
+    margin-top: 5px;
+    background-color: #574945;
+    border: 5px solid #574957;
 }
 
 .ucsd_geisel {
-    margin: 25px;
-    width: 200px;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    border: 5px solid #574945;
-    margin-bottom: 10px;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .description {
@@ -78,21 +103,21 @@
 
 @media only screen and (min-width: 360px) {
 
-    .head_shot_image {
+    .head_shot_container {
         width: 180px;
         float: left;
         margin-right: 10px;
         margin-left: 5px;
     }
 
-    .palette_image {
+    .palette_container {
         width: 150px;
         float: right;
         margin-right: 5px;
         margin-left: 10px;
     }
 
-    .ucsd_geisel {
+    .ucsd_geisel_container {
         float: left;
         width:  180px;
         margin-right: 10px;
@@ -102,14 +127,14 @@
 }
 
 @media only screen and (min-width: 470px) {
-    .head_shot_image {
+    .head_shot_container {
         margin-left: 10%;
         width: 20%;
     }
 }
 
 @media only screen and (min-width: 600px) {
-    .head_shot_image {
+    .head_shot_container {
         margin-left: 5%;
         width: 10%;
     }
@@ -129,7 +154,7 @@
         float: left;
         width: 32%;
     }
-    .head_shot_image {
+    .head_shot_container{
         float: none;
         margin: 25px;
         width: 190px;
@@ -137,18 +162,13 @@
         margin-left: auto;
         margin-right: auto;
     }
-    .palette_image {
+    .palette_container {
         display: none;
     }
-    .palette_image_2 {
-        float: none;
-        margin: 25px;
-        width: 80%;
+    .palette_container_2 {
         display: block;
-        margin-left: auto;
-        margin-right: auto;
     }
-    .ucsd_geisel {
+    .ucsd_geisel_container {
         float: none;
         margin: 25px;
         width: 80%;

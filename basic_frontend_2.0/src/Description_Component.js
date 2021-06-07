@@ -9,7 +9,9 @@ const About_Me_Box = () => {
     return (
         <div className="description_box" >
                 <p className="heading">About Me</p>
-                <img className="head_shot_image" src={HEAD_SHOT} alt="Head Shot"></img>
+                <div className="head_shot_container">
+                    <img className="head_shot_image" src={HEAD_SHOT} alt="Head Shot"></img>
+                </div>
                 <p className="description">
                     I was born January 2001 in&nbsp;
                     <a  className="link" href="https://www.cityofirvine.org/" target="_blank" rel="noreferrer">
@@ -40,8 +42,9 @@ const Mission_Box = () => {
     return (
         <div className="description_box" >
                 <p className="heading">Why I Code</p>
-                
-                <img className="palette_image" src={PALETTE} alt="Palette Daian Gan"></img>
+                <div className="palette_container">
+                    <img className="palette_image" src={PALETTE} alt="Palette Daian Gan"></img>
+                </div>
                 <p className="description">
                     I was first introduced to coding through a high school course in Java. 
                     Immediately I loved it because it let me create practical, impactful products in a deeply personal way. 
@@ -49,8 +52,9 @@ const Mission_Box = () => {
                     I've never found another practice that melds creativity and practicality in such a way. 
                     I am constantly looking to improve my skills in software develoment. All criticism is appreciated.
                 </p>
-                <img className="palette_image_2" src={PALETTE} alt="Palette Daian Gan"></img>
-                
+                <div className="palette_container_2">
+                    <img className="palette_image" src={PALETTE} alt="Palette Daian Gan"></img>
+                </div>
             </div>
     )
 }
@@ -60,7 +64,9 @@ const Education_Box = () => {
     return (
         <div className="description_box" >
                 <p className="heading">My School</p>
-                <img className="ucsd_geisel" src={GEISEL} alt="UCSD Geisel"></img>
+                <div className="ucsd_geisel_container">
+                    <img className="ucsd_geisel" src={GEISEL} alt="UCSD Geisel"></img>
+                </div>
                 <p className="description">
                     I attend the&nbsp;
                     <a  className="link" href="https://ucsd.edu/index.html" target="_blank" rel="noreferrer">
