@@ -2,9 +2,11 @@
     background-color: #DDDDE6;
     padding-top: 10px;
     text-align: center;
+    overflow: hidden;
 }
+
 .project_section_title {
-    padding: 10px;
+    padding: 25px;
     font-family: 'Courier New', Courier, monospace;
     font-size: 38px;
     font-weight: 900;
@@ -14,51 +16,74 @@
 
 .BiasML {
     display: block;
-    background-color: aliceblue;
+    background-color: rgb(177, 201, 223);
     padding-top: 1px;
     padding-bottom: 10px;
-    margin-top: 5px;
-    margin-bottom: 10px;
+    margin: 20px;
+    max-width: 950px;
+    overflow: hidden;
+    /* min-height: 300px; */
+    /* max-width: 800px; */
+    /* margin-top: 5px;
+    margin-bottom: 10px; */
 }
 .BiasML_SSerafin {
-    width: 200px;
     display: block;
-    margin: 25px;
+    max-width: 100%;
+    max-height: 100%;
     margin-left: auto;
     margin-right: auto;
+    transform: translate(12px, -12px);
 }
-.RateMyLease {
-    display: block;
-    background-color: aliceblue;
-    padding-top: 1px;
-    padding-bottom: 10px;
-    margin-top: 5px;
-    margin-bottom: 10px;
-}
-.RateMyLease_JChoe {
-    width: 200px;
-    display: block;
-    margin-bottom: 25px;
-    margin-left: auto;
-    margin-right: auto;
-}
-.WorkoutApp {
-    display: block;
-    background-color: aliceblue;
-    padding-top: 1px;
-    padding-bottom: 10px;
-    margin-top: 5px;
-    margin-bottom: 10px;
-}
-.WorkoutApp_Icon {
-    width: 200px;
-    display: block;
-    margin: 25px;
-    margin-left: auto;
-    margin-right: auto;
-    border: 3px solid #DDDDE6
+.BiasML_SSerafin:hover {
+    transform: translate(0px, 0px);
 }
 
+.RateMyLease {
+    display: block;
+    background-color: rgb(177, 201, 223);
+    padding-top: 1px;
+    padding-bottom: 10px;
+    margin: 20px;
+    max-width: 950px;
+    overflow: hidden;
+    /* margin-top: 10px;
+    margin-bottom: 10px; */
+}
+.RateMyLease_JChoe {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    transform: translate(12px, 12px);
+}
+.RateMyLease_JChoe:hover { 
+    transform: translate(0px, 0px);
+}
+
+.WorkoutApp {
+    display: block;
+    background-color: rgb(177, 201, 223);
+    padding-top: 1px;
+    padding-bottom: 10px;
+    margin: 20px;
+    max-width: 950px;
+    overflow: hidden;
+    /* margin-top: 10px;
+    margin-bottom: 10px; */
+}
+.WorkoutApp_Icon {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    transform: translate(12px, -12px);
+}
+.WorkoutApp_Icon:hover {
+    transform: translate(0px, 0px);
+}
 
 .project_heading {
     margin-top: 10px;
@@ -68,12 +93,38 @@
     color: #000050;
     font-weight: 1000;
 }
+.project_image_container {
+    background-color: #DDDDE6;
+    position: relative;
+    width: 200px;
+    display: block;
+    margin: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    border:  5px solid #DDDDE6;
+}
 .project_description {
+    display: block;
     font-family: 'Courier New', Courier, monospace;
     font-size: 18px;
+    margin: 10px;
+    margin-right: 25px;
     color: #000050;
 }
 
-@media only screen and (min-width: 500px) {
-   
+@media only screen and (min-width: 950px) {
+    .BiasML {
+        max-width: 950px;
+    }
+    .project_image_container {
+        float: left;
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+    .project_description {
+        float: right;
+        width: 600px;
+        text-align: left
+        ;
+    }
 }

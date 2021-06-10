@@ -8,6 +8,8 @@
     background-color: #777777;
     overflow: hidden;
     padding-bottom: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .heading {
@@ -37,7 +39,7 @@
     transform: translate(-10px,-10px);
 }
 .head_shot_image:hover {
-    transform: translate(-8px, -8px);
+    transform: translate(0px, 0px);
 }
 
 .palette_container {
@@ -57,7 +59,7 @@
     transform: translate(10px,10px);
 }
 .palette_image:hover {
-    transform: translate(8px, 8px);
+    transform: translate(0px, 0px);
 }
 .palette_container_2 {
     display: none;
@@ -88,7 +90,7 @@
     transform: translate(-10px,-10px);
 }
 .ucsd_geisel:hover {
-    transform: translate(-8px, -8px);
+    transform: translate(0px, 0px);
 }
 
 .description {

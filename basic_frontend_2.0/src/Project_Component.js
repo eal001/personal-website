@@ -1,5 +1,5 @@
 import BIASML_IMAGE from "./images/BiasML_by_SSerafin.png";
-import RATEMYLEASE_IMAGE from "./images/RateMyLease_JChoe_resized.png";
+import RATEMYLEASE_IMAGE from "./images/RateMyLease_JChoe_edit_6.png";
 import WORKOUTAPP_ICON from "./images/WorkoutApp_Icon.png";
 import "./Project_Component.css";
 
@@ -21,7 +21,7 @@ const RATEMYLEASE = {
     link: "https://github.com/jiuchoe4/rate-my-lease",
     description: "RateMyLease is a fullstack web application that uses React as a frontend, Express as a backend, and MongoDB as a database. " +
         "My Team and I implemented an interactive map to search for, display, rate, and upload houses and leases in the UC Davis area. " +
-        "This project was meant to assist UC Davis students with finding a lease once the Covid-19 Pandemic was over and housing near campus was necessary" + 
+        "This project was meant to assist UC Davis students with finding a lease once the Covid-19 Pandemic was over and housing near campus was necessary.  " + 
         "Through the frontend, we implemented a Google Maps API that displayed and helped manage the addressess and leases. " +
         "These leases were then requested for or posted to the backend which would store to or read from the MongoDB database."
 }
@@ -41,10 +41,14 @@ const Project = ({classname, imagename, image, link, description}) => {
     return (
         <a href={link} className={classname}>
             <p className="project_heading">{classname}</p>
-            <img className={imagename} src={image} alt={imagename}></img>
-            <p className="project_description">
-                {description}
-            </p>
+            <div className="project_content_container">
+                <div className="project_image_container">
+                    <img className={imagename} src={image} alt={imagename}></img>
+                </ div>
+                <div className="project_description">
+                    {description}
+                </div>
+            </div>
         </a>
     )
 }
