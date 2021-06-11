@@ -38,9 +38,12 @@ const WORKOUTAPP = {
 }
 
 const Project = ({classname, imagename, image, link, description}) => {
+
+    const background_name = "project_animated_background "+classname.toString()+"_bk";
     return (
         <a href={link} className={classname}>
             <p className="project_heading">{classname}</p>
+            <div className={background_name}></div>
             <div className="project_content_container">
                 <div className="project_image_container">
                     <img className={imagename} src={image} alt={imagename}></img>

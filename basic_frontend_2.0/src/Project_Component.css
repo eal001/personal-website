@@ -15,6 +15,7 @@
 }
 
 .BiasML {
+    position: relative;
     display: block;
     background-color: rgb(177, 201, 223);
     padding-top: 1px;
@@ -40,6 +41,7 @@
 }
 
 .RateMyLease {
+    position: relative;
     display: block;
     background-color: rgb(177, 201, 223);
     padding-top: 1px;
@@ -63,6 +65,7 @@
 }
 
 .WorkoutApp {
+    position: relative;
     display: block;
     background-color: rgb(177, 201, 223);
     padding-top: 1px;
@@ -87,15 +90,40 @@
 
 .project_heading {
     margin-top: 10px;
+    position: relative;
+    z-index: 3;
     font-family: 'Courier New', Courier, monospace;
     font-size: 24px;
     text-decoration: underline;
     color: #000050;
     font-weight: 1000;
 }
+.project_animated_background {
+    position: absolute;
+    z-index: 2;
+    content: "";
+    top: 0%;
+    height: 100%;
+    width: 0%;
+    background-color: rgb(137, 173, 206);
+    transition: width 250ms ease-in;
+}
+.BiasML:hover .project_animated_background {
+    z-index: 2;
+    width: 100%;
+}
+.RateMyLease:hover .project_animated_background {
+    z-index: 2;
+    width: 100%;
+}
+.WorkoutApp:hover .project_animated_background {
+    z-index: 2;
+    width: 100%;
+}
 .project_image_container {
     background-color: #DDDDE6;
     position: relative;
+    z-index: 3;
     width: 200px;
     display: block;
     margin: 10px;
@@ -105,6 +133,8 @@
 }
 .project_description {
     display: block;
+    position: relative;
+    z-index: 3;
     font-family: 'Courier New', Courier, monospace;
     font-size: 18px;
     margin: 10px;
