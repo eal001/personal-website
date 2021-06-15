@@ -40,8 +40,9 @@ const WORKOUTAPP = {
 const Project = ({classname, imagename, image, link, description}) => {
 
     const background_name = "project_animated_background";
+    const project_name = "project " + classname.toString();
     return (
-        <a href={link} className={classname}>
+        <a href={link} className={project_name}>
             <p className="project_heading">{classname}</p>
             <div className={background_name}></div>
             <div className="project_content_container">
@@ -59,11 +60,11 @@ const Project_Component = () => {
     return (
         <div className="project_component">
             <h className="project_section_title"> My Projects </h>
-            <div classname="detail_container">
+            <div className="project_container">
                 <Project classname={BIASML.name} imagename={BIASML.imagename} image={BIASML.image} link={BIASML.link} description={BIASML.description}/>
+                <Project classname={RATEMYLEASE.name} imagename={RATEMYLEASE.imagename} image={RATEMYLEASE.image} link={RATEMYLEASE.link} description={RATEMYLEASE.description}/>
+                <Project classname={WORKOUTAPP.name} imagename={WORKOUTAPP.imagename} image={WORKOUTAPP.image} link={WORKOUTAPP.link} description={WORKOUTAPP.description}/>
             </div>
-            <Project classname={RATEMYLEASE.name} imagename={RATEMYLEASE.imagename} image={RATEMYLEASE.image} link={RATEMYLEASE.link} description={RATEMYLEASE.description}/>
-            <Project classname={WORKOUTAPP.name} imagename={WORKOUTAPP.imagename} image={WORKOUTAPP.image} link={WORKOUTAPP.link} description={WORKOUTAPP.description}/>
         </div>
     )
 }
