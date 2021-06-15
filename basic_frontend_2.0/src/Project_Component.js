@@ -39,7 +39,7 @@ const WORKOUTAPP = {
 
 const Project = ({classname, imagename, image, link, description}) => {
 
-    const background_name = "project_animated_background "+classname.toString()+"_bk";
+    const background_name = "project_animated_background";
     return (
         <a href={link} className={classname}>
             <p className="project_heading">{classname}</p>
@@ -59,7 +59,9 @@ const Project_Component = () => {
     return (
         <div className="project_component">
             <h className="project_section_title"> My Projects </h>
-            <Project classname={BIASML.name} imagename={BIASML.imagename} image={BIASML.image} link={BIASML.link} description={BIASML.description}/>
+            <div classname="detail_container">
+                <Project classname={BIASML.name} imagename={BIASML.imagename} image={BIASML.image} link={BIASML.link} description={BIASML.description}/>
+            </div>
             <Project classname={RATEMYLEASE.name} imagename={RATEMYLEASE.imagename} image={RATEMYLEASE.image} link={RATEMYLEASE.link} description={RATEMYLEASE.description}/>
             <Project classname={WORKOUTAPP.name} imagename={WORKOUTAPP.imagename} image={WORKOUTAPP.image} link={WORKOUTAPP.link} description={WORKOUTAPP.description}/>
         </div>
