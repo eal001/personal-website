@@ -44,15 +44,9 @@ const Project = ({classname, imagename, image, link, description}) => {
     return (
         <a href={link} className={project_name}>
             <p className="project_heading">{classname}</p>
-            <div className={background_name}></div>
-            <div className="project_content_container">
-                <div className="project_image_container">
-                    <img className={imagename} src={image} alt={imagename}></img>
-                </ div>
-                <div className="project_description">
-                    {description}
-                </div>
-            </div>
+            <div className="project_image_container">
+                <img className={imagename} src={image} alt={imagename}></img>
+            </ div>
         </a>
     )
 }

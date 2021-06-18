@@ -65,7 +65,7 @@ const Main_Skill_Section = () => {
                         </div>
                         <div className="rounded_skill_bar bar2"></div>
                     </button>
-                    <h2 className="big_skill_title">Access</h2>
+                    <h2 className="big_skill_title">Responsive</h2>
                 </div>
                 
                 <div className="icon_wrapper">
@@ -77,7 +77,7 @@ const Main_Skill_Section = () => {
                         </ div>
                         <div className="rounded_skill_bar bar3"></div>
                     </button>
-                    <h2 className="big_skill_title">Team</h2>
+                    <h2 className="big_skill_title">Collaborative</h2>
                 </div> 
             </div>
 

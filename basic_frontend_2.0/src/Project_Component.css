@@ -4,6 +4,11 @@
     text-align: center;
     overflow: hidden;
 }
+.project_container {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
 
 .project_section_title {
     padding: 25px;
@@ -16,6 +21,7 @@
 .project {
     position: relative;
     display: block;
+    float: left;
     background-color: rgb(177, 201, 223);
     padding-top: 1px;
     padding-bottom: 10px;

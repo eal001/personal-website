@@ -99,8 +99,21 @@ const Description_Component = () => {
             <h1 className="description_section_title">Who I Am</h1>
             <div className="description_content_container">
                 <div className="description_button_container">
-                    <button className="description_button about" onClick={() => handleClick(1)}>About Me <Border_Component /> </button>
-                    <button className="description_button school" onClick={() => handleClick(2)}>My School <Border_Component /> </button>
+                    <button className="description_button about" onClick={() => handleClick(1)}>
+                        <div className="description_button_background"></div>
+                        <p className="button_text">About Me</p> 
+                        <Border_Component />
+                        
+                    </button>
+                    <div className="rounded_description_bar about_bar"></div>
+
+                    <button className="description_button school" onClick={() => handleClick(2)}>
+                        <div className="description_button_background"></div>
+                        <p className="button_text">My School</p> 
+                        <Border_Component />
+                        
+                    </button>
+                    <div className="rounded_description_bar school_bar"></div> 
                 </div>
                 <div className="description_text_container">
                     <About_Me_Box num={selected} required_num={1}/>
