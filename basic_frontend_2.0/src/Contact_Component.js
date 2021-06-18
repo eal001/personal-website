@@ -1,11 +1,21 @@
 import "./Contact_Component.css";
 import React, {useState} from "react";
 import emailjs from "emailjs-com";
+import Typist from "react-typist";
 require("dotenv");
 
 const SERVICE_ID = process.env.REACT_APP_EMAILJS_SERVICE_ID;
 const TEMPLATE_ID = process.env.REACT_APP_EMAILJS_TEMPLATE_ID;
 const USER_ID = process.env.REACT_APP_EMAILJS_USER_ID;
+const TIMEOUT = 1000;
+const CURSOR = {
+    show: true,
+    blink: true,
+    element: "_",
+    hideWhenDone: true,
+    hideWhenDoneDelay: TIMEOUT*1.44
+};
+
 const Email_Box = () => {
 
     const [name, setName] = useState("");
@@ -34,35 +44,52 @@ const Email_Box = () => {
             from_email: email,
             message: message
         }
-        
+
         //commented out for the time being
-        // emailjs.send(SERVICE_ID, TEMPLATE_ID, details, USER_ID)
-        //     .then((result) => {
-        //         console.log(result.text);
-        //     }, (error) => {
-        //         console.log(error.text);
-        //     });
+        emailjs.send(SERVICE_ID, TEMPLATE_ID, details, USER_ID)
+            .then((result) => {
+                console.log(result.text);
+            }, (error) => {
+                console.log(error.text);
+            });
         
         console.log("submitted email");
     }
 
     return (
-        <form className="Email_Box" onSubmit={handleSubmit} >
-            <label className="input_label" id="name_input">Name</label>
-            <input className="name_input" type="text" id="name_input" placeholder="John Doe" value={name} onChange={handleNameChange}></input>
-            <label className="input_label" id="email_input">Email</label>
-            <input className="email_input" type="text" id="email_input" placeholder="JohnDoe@gmail.com" value={email} onChange={handleEmailChange}></input>
-            <label className="input_label" id="message_input">Message</label>
-            <input className="message_input" type="text" id="message_input" placeholder="Message Here" value={message} onChange={handleMsgChange}></input>
-            <input className="submit_button" type="submit" value="Submit"></ input>
-        </form>
+        <div className="email_box_background">
+            <div className="email_box">
+                <input className="text_input name_field " type="text" placeholder="Enter Name Here" value={name} onChange={handleNameChange}></input>
+                <input className="text_input email_field" type="text" placeholder="Enter Email Here" value={email} onChange={handleEmailChange}></input>
+                <textarea className="text_input message_field" type="text" placeholder="Enter Message Here" value={message} onChange={handleMsgChange}></textarea>
+                <div></div>
+                <input className="submit_button" type="submit" value="Submit" onClick={handleSubmit}></ input>
+            </ div>
+        </ div>
+    )
+}
+
+const Link_Box = () => {
+
+    return(
+        <div className="link_box">
+            <a href="https://www.linkedin.com/in/eal001/">linkedin</ a>
+            <a href="https://github.com/eal001/">github</ a>
+            <a href="https://devpost.com/eal001">devpost</ a>
+        </div>
     )
 }
 const Contact_Component = () => {
     return (
         <div className="contact_component">
-            <h1>Let's Get in Touch!</h1>
+            <h1 className="contact_section_title">Let's Get in Touch!</h1>
+            <p className="contact_description">
+                <Typist  avgTypingDelay={40} cursor={CURSOR}>
+                    I would love to work together and answer any quentions you might have!
+                </ Typist>
+            </p>
             <Email_Box />
+            <Link_Box />
         </div>
     )
 }

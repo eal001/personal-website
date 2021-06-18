@@ -56,31 +56,32 @@ const Title_Component = () => {
 
     return(
         <div className="title_component">
-            <div className="title_image_background">
-                <div className="title">
-                    <Typist cursor={CURSOR}>
-                        <Typist.Delay blink={true} ms={TIMEOUT*2}/>
-                        {MY_NAME}
-                        <br />
-                        <Typist.Delay blink={true} ms={TIMEOUT*2}/>
-                        <br />
-                        <Typist.Delay blink={true} ms={TIMEOUT*2}/>
-                        {SELF_DESCRIPTION}
-                    </Typist>
-                </div>
+            <div className="title_image_border">
+                <div className="title_image_background">
+                    <div className="title">
+                        <Typist cursor={CURSOR}>
+                            <Typist.Delay blink={true} ms={TIMEOUT*2}/>
+                            {MY_NAME}
+                            <br />
+                            <Typist.Delay blink={true} ms={TIMEOUT*2}/>
+                            <br />
+                            <Typist.Delay blink={true} ms={TIMEOUT*2}/>
+                            {SELF_DESCRIPTION}
+                        </Typist>
+                    </div>
 
-                <div className="info_container">
-                    <button className="info_button" onMouseEnter={handleEnter} onMouseLeave={handleLeave}>
-                        <i className="material-icons">info</i>
-                    </button>
+                    <div className="info_container">
+                        <button className="info_button" onMouseEnter={handleEnter} onMouseLeave={handleLeave}>
+                            <i className="material-icons">info</i>
+                        </button>
 
-                    <div classname="info_text_container">
-                        <Bar isOpen={isOpen}/>
-                        <Location_Description isOpen={isOpen} />
+                        <div classname="info_text_container">
+                            <Bar isOpen={isOpen}/>
+                            <Location_Description isOpen={isOpen} />
+                        </div>
                     </div>
                 </div>
             </div>
-
         </div>
     )
 }

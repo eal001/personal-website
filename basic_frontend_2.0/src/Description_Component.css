@@ -1,161 +1,147 @@
 .description_component {
-    background-color: #574945;
+    background-color: black;
     content: "";
     width: 100%;
+    margin-bottom: 10%;
 }
-
+.description_section_title {
+    text-align: center;
+    color: white;
+    font-family: "Consolas", "Courier New", "monospace";
+    text-decoration: underline;
+    margin: 15px;
+    margin-left: 25px;
+    margin-bottom: 25px;
+}
+.description_content_container {
+    display: block;
+}
+.description_button_container {
+    flex: 1;
+    justify-content: space-evenly;
+    display: flex;
+    position: relative;
+}
+.description_button {
+    /*description here*/
+    position: relative;
+    color: white;
+    font-family: "Consolas", "Courier New", "monospace";
+    font-size: 20px;
+    background-color: black;
+    border: 2px solid white;
+}
+.button_border { /*FIGURE OUT TEXT SHOWING UP*/
+    background-color: lime;
+    position: absolute;
+    content: "";
+    transform: scale(1, 1);
+    transition: all 100ms linear;
+}
+.top {
+    left: 0%;
+    top: 0%;
+    transform: translate(-2px, -2px) scaleX(0);
+    height: 2px;
+    width: calc(100% + 2px);
+    transform-origin: center left;
+    transition-delay: 300ms;
+}
+.right {
+    left: 100%;
+    top: 0%;
+    transform: translate(0px, -2px) scaleY(0);
+    height: calc(100% + 2px);
+    width: 2px;
+    transform-origin: top center;
+    transition-delay: 200ms;
+}
+.bot {
+    left: 0%;
+    top: 100%;
+    width: calc(100% + 2px);
+    transform: scaleX(0);
+    height: 2px;
+    transform-origin: center right;
+    transition-delay: 100ms;
+}
+.left {
+    top: 0%;
+    left: 0%;
+    width: 2px;
+    height: calc(100% + 2px);
+    transform: translate(-2px, 0px) scaleY(0);
+    transform-origin: bottom center;
+    transition-delay: 0ms;
+}
+.description_button:hover .top {
+    transform: translate(-2px, -2px) scaleX(1);
+    transition-delay: 0ms;
+}
+.description_button:hover .right {
+    transform: translate(0px, -2px) scaleY(1);
+    transition-delay: 100ms;
+}
+.description_button:hover .bot {
+    transform: scaleX(1);
+    transition-delay: 200ms;
+}
+.description_button:hover .left {
+    transform: translate(-2px, 0px) scaleY(1);
+    transition-delay: 300ms;
+}
+.description_text_container {
+    flex: 3;
+    min-height: 525px;
+    max-height: 525px;
+    overflow: hidden;
+    margin-left: 25px;
+    margin-right: 25px;
+}
 .description_box {
-    background-color: #777777;
+    background-color: black;
     overflow: hidden;
     padding-bottom: 10px;
     margin-top: 10px;
     margin-bottom: 10px;
 }
-
-.heading {
-    padding-top: 10px;
-    font-size: 32px;
-    font-weight: 750;
-    font-family: 'Courier New', Courier, monospace;
-    color: white;
-    text-align: center;
-    text-decoration: underline;
-}
-
-.head_shot_container{
-    background-color: #574945;
-    display: block;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 200px;
-    border: 5px solid #574945;
-}
-.head_shot_image {
-    display: block;
-    max-height: 100%;
-    max-width: 100%;
-    transform: translate(-10px,-10px);
-}
-.head_shot_image:hover {
-    transform: translate(0px, 0px);
-}
-
-.palette_container {
-    width: 200px;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: #574945;
-    margin-top: 5px;
-    margin-bottom: 10px;
-    display: block;
-    border: 5px solid #574945;
-}
-.palette_image {
-    display: block;
-    max-width: 100%;
-    max-height: 100%;
-    transform: translate(10px,10px);
-}
-.palette_image:hover {
-    transform: translate(0px, 0px);
-}
-.palette_container_2 {
-    display: none;
-    float: none;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: #574945;
-    border: 5px solid #574945;
-}
-
-.ucsd_geisel_container {
-    width: 200px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 10px;
-    margin-top: 10px;
-    background-color: #574945;
-    border: 5px solid #574945;
-}
-.ucsd_geisel {
-    display: block;
-    max-width: 100%;
-    max-height: 100%;
-    transform: translate(-10px,-10px);
-}
-.ucsd_geisel:hover {
-    transform: translate(0px, 0px);
-}
-
 .description {
-    font-family: 'Courier New', Courier, monospace;
-    text-align: center;
+    font-family: "Consolas", "Courier New", "monospace";
+    text-align: left;
     font-size: 18px;
     color: white;
     padding-top: 5px;
     padding-left: 5px;
     padding-right: 5px;
 }
-
 .link {
-    color: rgb(202, 202, 255);
+    color: lime;
 }
 
 .link:hover {
     font-weight: 1000;
 }
-
 .spacer {
     position: relative;
     height: 10px;
 }
 
-@media only screen and (min-width: 360px) {
 
-    .head_shot_container {
-        width: 180px;
-        float: left;
-        margin-right: 10px;
-        margin-left: 5px;
-    }
-
-    .palette_container {
-        width: 150px;
-        float: right;
-        margin-right: 5px;
-        margin-left: 10px;
-    }
-
-    .ucsd_geisel_container {
-        float: left;
-        width:  180px;
-        margin-right: 10px;
-        margin-left: 5px;
-    }
-
-}
-
-@media only screen and (min-width: 470px) {
-    .head_shot_container {
-        margin-left: 10%;
-        width: 20%;
+@media only screen and (min-width: 330px) {
+    .description_text_container {
+        min-height: 425px;
     }
 }
-
+@media only screen and (min-width: 450px) {
+    .description_text_container {
+        min-height: 300px;
+    }
+}
 @media only screen and (min-width: 600px) {
-    .head_shot_container {
-        margin-left: 5%;
-        width: 10%;
+    .description_text_container {
+        min-height: 225px;
     }
 }
-
-
 /* this is the one where we switch from being horiozonatlly stacked to verically stacked*/
 @media only screen and (min-width: 700px) {
     .description_component {
@@ -164,32 +150,26 @@
         padding-top: 5px;
         padding-bottom: 5px;
     }
-    .description_box {
+    .description_section_title {
+        text-align: left;
+    }
+    .description_content_container {
+        display: flex;
+    }
+    .description_button_container {
+        display: block;
         position: relative;
-        float: left;
-        width: 32%;
     }
-    .head_shot_container{
-        float: none;
-        margin: 25px;
-        width: 190px;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
+    .description_button {
+        position: absolute;
     }
-    .palette_container {
-        display: none;
+    .about {
+        top: 0%;
+        right: 10px;
     }
-    .palette_container_2 {
-        display: block;
-    }
-    .ucsd_geisel_container {
-        float: none;
-        margin: 25px;
-        width: 80%;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
+    .school {
+        bottom: 0%;
+        right: 10px;
     }
     .spacer {
         position: relative;
@@ -198,4 +178,9 @@
         width: 1%;
         height: 10px;
     }
+}
+@media only screen and (min-width: 1000px){
+    .description_text_container {
+        min-height: 175px; 
+     }
 }
