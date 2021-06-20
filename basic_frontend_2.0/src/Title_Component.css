@@ -59,14 +59,13 @@
 .info_button {
     position: absolute;
     right: 0%;
-    top: 0%;
     content: "";
     border-color: transparent;
     background-color: transparent;
     color: lime;
     font-size: 24px;
-    height: 10%;
-    width: 10%;
+    /* height: 10%;
+    width: 10%; */
 }
 
 .rounded_bar {
