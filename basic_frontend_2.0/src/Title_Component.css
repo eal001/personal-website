@@ -59,11 +59,12 @@
 .info_button {
     position: absolute;
     right: 0%;
+    top: 0%;
     content: "";
     border-color: transparent;
     background-color: transparent;
     color: lime;
-    font-size: 16px;
+    font-size: 24px;
     height: 10%;
     width: 10%;
 }
