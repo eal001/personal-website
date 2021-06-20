@@ -9,11 +9,15 @@ Author: Elliot Lee
     plans for 1.1
 
     I am going to find a better font for the headings
-    I am going to make the message box for the email dynamic
     I am going to cc the email input from the messages
-    I am going to add a picture of myself
     I am going to reformat the about me section
+    
+    plans for 1.2
 
+    I am going to add a picture of myself
+    I am going to make the message box for the email dynamic
+    I am going to add an alert box to the email submission
+    I want to add a check if any of the onput boxes have been changed, and are non empty so that emails are less spammable
 
 
 ## Version Differences
