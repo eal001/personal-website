@@ -21,6 +21,9 @@
     padding: 5px;
     border: 2px solid white;
 }
+.nav_link:hover {
+    color: lime;
+}
 .nav_link_border { 
     background-color: lime;
     position: absolute;
