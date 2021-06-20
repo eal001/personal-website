@@ -58,6 +58,8 @@ const Email_Box = () => {
             });
         
         console.log("submitted email");
+
+        console.log(document.getElementsByClassName("name_field")[0].value)
     }
 
     return (
