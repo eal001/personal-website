@@ -7,7 +7,7 @@
 .skill_section_title {
     font-family:  HeadingFont ;
     font-size: 32px;
-    font-weight: 900;
+    font-weight: 100;
     text-align: center;
     color: white;
     margin-left: auto;
@@ -26,7 +26,7 @@
 .icon_container {
     position: relative;
     overflow: hidden;
-    flex: 1;
+    flex: 5;
     margin-bottom: 15px;
 }
 
@@ -106,7 +106,7 @@
 
 .big_skill_description {
     position: relative;
-    flex: 2;
+    flex: 6;
     left: 5px;
     font-family:  "Consolas", "Courier New", "monospace";
     color: white;

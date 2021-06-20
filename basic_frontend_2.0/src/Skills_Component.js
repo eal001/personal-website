@@ -33,7 +33,7 @@ const Description = ({num, required_num, message}) => {
 }
 
 const Main_Skill_Section = () => {
-    const [selected, setSelected] = useState(1); 
+    const [selected, setSelected] = useState(0); 
     const handleClick = (num) => {
         // 0 means no select, 1 = first, 2 = second, 3 = third
         //console.log("handleClick");

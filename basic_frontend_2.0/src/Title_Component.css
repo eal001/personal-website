@@ -1,6 +1,7 @@
 @font-face {
     font-family: HeadingFont;
-    src: url("./fonts/data-latin.ttf");
+    /* src: url("./fonts/data-latin.ttf"); */
+    src: local("Courier New");
 }
 
 .title_component {

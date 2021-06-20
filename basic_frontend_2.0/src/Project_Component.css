@@ -18,7 +18,7 @@
     margin: 25px;
     font-family: HeadingFont ;
     font-size: 32px;
-    font-weight: 900;
+    font-weight: 100;
     color: white;
 
     text-decoration: underline;
@@ -75,18 +75,19 @@
     display: flex;
     align-items:center;
     justify-content: center;
-    top: 5px;
-    left: 5px;
-    height: calc(100% - 10px);
-    width: calc(100% - 10px);
+    /* height: calc(100% - 10px);
+    width: calc(100% - 10px); */
+    padding-left: 5px;
+    padding-right: 5px;
     z-index: 3;
     font-family: "Consolas", "Courier New", "monospace";
-    font-size: 20px;
+    font-size: 12px;
     
-    color: rgb(0, 0, 0);
+    top: calc(100% - 24px);
+    color: lime;
+    border: 5px solid lime;
     font-weight: 1000;
-    background-color: white;
-    opacity: 0.7;
+    background-color: black;
     transition: all 100ms ease-out;
     transition-delay: 300ms;
     /* border: 5px solid transparent; */
@@ -165,6 +166,7 @@
     }
     .project_heading {
         font-size: 24px;
+        top: calc(100% - 38px);
     }
 }
 

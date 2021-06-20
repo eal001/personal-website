@@ -108,6 +108,8 @@ const Link_Box = () => {
 const Credits_Section = () => {
     return (
         <div className="credit_section">
+            <p>Elliot Lee © 2021</p>
+            <br />
             <p>All credit for the artwork, photos, and logos goes to the original creator</p>
             <div>Icons made by <a className="art_credit_link" href="https://smashicons.com/" title="Smashicons">Smashicons</a> from <a className="art_credit_link" href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
             <div>BiasML art made by <a className="art_credit_link" href="https://github.com/shantellemeganserafin">Shantelle Serafin</a></ div>
