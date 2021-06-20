@@ -18,6 +18,7 @@ Author: Elliot Lee
     I am going to make the message box for the email dynamic
     I am going to add an alert box to the email submission
     I want to add a check if any of the onput boxes have been changed, and are non empty so that emails are less spammable
+    add animations when scrolling into view
 
 
 ## Version Differences
