@@ -95,7 +95,7 @@ const Description_Component = () => {
     }
 
     return (
-        <div className="description_component">
+        <div id="about" className="description_component">
             <h1 className="description_section_title">Who I Am</h1>
             <div className="description_content_container">
                 <div className="description_button_container">

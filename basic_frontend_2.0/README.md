@@ -5,10 +5,20 @@ Author: Elliot Lee
     I am going to plan out the design before building.
     I am going to plan out the division of code components before building.
     I am going to develop with mobile view in mind first
+    
+    plans for 1.1
+
+    I am going to find a better font for the headings
+    I am going to make the message box for the email dynamic
+    I am going to cc the email input from the messages
+    I am going to add a picture of myself
+    I am going to reformat the about me section
+
+
 
 ## Version Differences
     No TV Static animation, it does not fit the theme that I have for this website.
-
+    version 1.0 working
 
 # Getting Started with Create React App
 

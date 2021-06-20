@@ -56,7 +56,7 @@ const Project = ({classname, imagename, image, link, description}) => {
 }
 const Project_Component = () => {
     return (
-        <div className="project_component">
+        <div id="projects" className="project_component">
             <div className="project_section_title">
                 My Projects 
             </ div>

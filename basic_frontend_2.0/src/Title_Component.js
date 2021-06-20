@@ -58,7 +58,7 @@ const Title_Component = () => {
     }
 
     return(
-        <div className="title_component">
+        <div id="title_component" className="title_component">
             <div className="title_image_border">
                 <div className="title_image_background">
                     <div className="title">

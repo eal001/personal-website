@@ -147,7 +147,7 @@ const Language_Section  = () => {
 }
 const  Skill_Component = () => {
     return (
-        <div className="skill_component">
+        <div id="skills" className="skill_component">
             <h1 className="skill_section_title">What I Do</h1>
             <Main_Skill_Section />
             <Sub_Skill_Section />

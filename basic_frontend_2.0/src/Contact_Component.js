@@ -104,9 +104,20 @@ const Link_Box = () => {
         </div>
     )
 }
+
+const Credits_Section = () => {
+    return (
+        <div className="credit_section">
+            <p>All credit for the artwork, photos, and logos goes to the original creator</p>
+            <div>Icons made by <a className="art_credit_link" href="https://smashicons.com/" title="Smashicons">Smashicons</a> from <a className="art_credit_link" href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+            <div>BiasML art made by <a className="art_credit_link" href="https://github.com/shantellemeganserafin">Shantelle Serafin</a></ div>
+            <div>RateMyLease art made by <a className="art_credit_link" href="https://github.com/jiuchoe4">Jiu Choe</a></div>
+        </div>
+    )
+}
 const Contact_Component = () => {
     return (
-        <div className="contact_component">
+        <div id="contact" className="contact_component">
             <h1 className="contact_section_title">Let's Get in Touch!</h1>
             <p className="contact_description">
                 <Typist  avgTypingDelay={40} cursor={CURSOR}>
@@ -115,6 +126,7 @@ const Contact_Component = () => {
             </p>
             <Email_Box />
             <Link_Box />
+            <Credits_Section />
         </div>
     )
 }

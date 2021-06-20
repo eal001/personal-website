@@ -165,6 +165,16 @@
 .social_link:hover .link_filter { 
     transform: scale(1,1);
 }
+.credit_section {
+    color: white;
+    font-family: "Consolas", "Courier New", "monospace";
+}
+.art_credit_link {
+    color: lime;
+}
+.art_credit_link:hover {
+    font-weight: 1000;
+}
 @media only screen and (min-width: 700px) {
     .contact_section_title {
         text-align: left;
