@@ -7,11 +7,13 @@
 .description_section_title {
     text-align: center;
     color: white;
-    font-family: "Consolas", "Courier New", "monospace";
-    text-decoration: underline;
+    font-family: HeadingFont ;
     margin: 15px;
     margin-left: 25px;
     margin-bottom: 25px;
+    font-size: 32px;
+
+    text-decoration: underline;
 }
 .description_content_container {
     display: block;
@@ -147,8 +149,6 @@
 }
 .description_text_container {
     flex: 3;
-    min-height: 525px;
-    max-height: 525px;
     overflow: hidden;
     margin-left: 25px;
     margin-right: 25px;
@@ -182,21 +182,6 @@
 }
 
 
-@media only screen and (min-width: 330px) {
-    .description_text_container {
-        min-height: 425px;
-    }
-}
-@media only screen and (min-width: 450px) {
-    .description_text_container {
-        min-height: 300px;
-    }
-}
-@media only screen and (min-width: 600px) {
-    .description_text_container {
-        min-height: 225px;
-    }
-}
 /* this is the one where we switch from being horiozonatlly stacked to verically stacked*/
 @media only screen and (min-width: 700px) {
     .description_component {
@@ -207,6 +192,8 @@
     }
     .description_section_title {
         text-align: left;
+        text-decoration: none;
+        font-size: 48px;
     }
     .description_content_container {
         display: flex;
@@ -214,6 +201,9 @@
     .description_button_container {
         display: block;
         position: relative;
+    }
+    .description_text_container {
+        min-height: 200px;
     }
     .rounded_description_bar {
         top: 0%;

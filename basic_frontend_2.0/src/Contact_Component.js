@@ -2,6 +2,10 @@ import "./Contact_Component.css";
 import React, {useState} from "react";
 import emailjs from "emailjs-com";
 import Typist from "react-typist";
+import LinkedIn from "./images/LinkedIn_logo.png";
+import GitHub from "./images/GitHub_logo.png";
+import DevPost from "./images/Devpost_logo_cropped.png";
+import Instagram  from "./images/Instagram_logo.png";
 require("dotenv");
 
 const SERVICE_ID = process.env.REACT_APP_EMAILJS_SERVICE_ID;
@@ -63,7 +67,13 @@ const Email_Box = () => {
                 <input className="text_input email_field" type="text" placeholder="Enter Email Here" value={email} onChange={handleEmailChange}></input>
                 <textarea className="text_input message_field" type="text" placeholder="Enter Message Here" value={message} onChange={handleMsgChange}></textarea>
                 <div></div>
-                <input className="submit_button" type="submit" value="Submit" onClick={handleSubmit}></ input>
+                <button className="submit_button" onClick={handleSubmit}>
+                    Submit
+                    <div className="button_border top3"></div>    
+                    <div className="button_border right3"></div>  
+                    <div className="button_border bot3"></div>  
+                    <div className="button_border left3"></div>  
+                </ button>
             </ div>
         </ div>
     )
@@ -73,9 +83,22 @@ const Link_Box = () => {
 
     return(
         <div className="link_box">
-            <a href="https://www.linkedin.com/in/eal001/">linkedin</ a>
-            <a href="https://github.com/eal001/">github</ a>
-            <a href="https://devpost.com/eal001">devpost</ a>
+            <a className="social_link" href="https://www.linkedin.com/in/eal001/">
+                <img className="link_image" alt="LinkedIn" src={LinkedIn}></img>    
+                <div className="link_filter"></div>
+            </ a>
+            <a className="social_link" href="https://github.com/eal001/">
+                <img className="link_image" alt="GitHub" src={GitHub}></img> 
+                <div className="link_filter"></div>   
+            </ a>
+            <a className="social_link" href="https://devpost.com/eal001">
+                <img className="link_image" alt="Devpost" src={DevPost}></img>
+                <div className="link_filter"></div>
+            </ a>
+            <a className="social_link" href="https://www.instagram.com/eal001/">
+                <img className="link_image" alt="Instagram" src={Instagram}></img>
+                <div className="link_filter"></div>
+            </a>
         </div>
     )
 }
@@ -85,7 +108,7 @@ const Contact_Component = () => {
             <h1 className="contact_section_title">Let's Get in Touch!</h1>
             <p className="contact_description">
                 <Typist  avgTypingDelay={40} cursor={CURSOR}>
-                    I would love to work together and answer any quentions you might have!
+                    I would love to work together and answer any questions you might have!
                 </ Typist>
             </p>
             <Email_Box />

@@ -7,7 +7,7 @@ const BIASML = {
     name: "BiasML",
     imagename: "BiasML_SSerafin",
     image: BIASML_IMAGE,
-    link: "https://github.com/eal001/bias-ml",
+    link: "https://devpost.com/software/bias-ml",
     description: "BiasML is a full stack web application that uses React as a frontend and Google Firebase backend as a service. " +
             "My Team and I implemented dynamic webscraping and natural language machine learning algorithms to parse web articles sentence by sentence. "+
             "Each sentence of the article is sent to a machine learning model trained on a Cambridge database of political language. " + 
@@ -38,22 +38,28 @@ const WORKOUTAPP = {
 }
 
 const Project = ({classname, imagename, image, link, description}) => {
-
-    const background_name = "project_animated_background";
-    const project_name = "project " + classname.toString();
     return (
-        <a href={link} className={project_name}>
-            <p className="project_heading">{classname}</p>
+        <a href={link} className={"project " + classname.toString()}>
             <div className="project_image_container">
                 <img className={imagename} src={image} alt={imagename}></img>
+                
+                <div className="project_border top2"></div>
+                <div className="project_border right2"></div>
+                <div className="project_border bot2"></div>
+                <div className="project_border left2"></div>
             </ div>
+            
+            <p className="project_heading">{classname}</p>
+            
         </a>
     )
 }
 const Project_Component = () => {
     return (
         <div className="project_component">
-            <h className="project_section_title"> My Projects </h>
+            <div className="project_section_title">
+                My Projects 
+            </ div>
             <div className="project_container">
                 <Project classname={BIASML.name} imagename={BIASML.imagename} image={BIASML.image} link={BIASML.link} description={BIASML.description}/>
                 <Project classname={RATEMYLEASE.name} imagename={RATEMYLEASE.imagename} image={RATEMYLEASE.image} link={RATEMYLEASE.link} description={RATEMYLEASE.description}/>

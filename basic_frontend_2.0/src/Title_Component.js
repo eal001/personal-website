@@ -47,10 +47,13 @@ const Title_Component = () => {
     const [isOpen, setOpen] = useState(false);
 
     function handleEnter() {
+        
+        document.getElementsByClassName("title_image_background")[0].style.animation = "depixelate 2000ms forwards";
         setOpen(true);
     }
 
     function handleLeave() {
+        document.getElementsByClassName("title_image_background")[0].style.animation = "pixelate 2000ms forwards";
         setOpen(false);
     }
 

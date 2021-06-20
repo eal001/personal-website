@@ -1,53 +1,59 @@
 .contact_component {
-    background-color: #FBD9B1;
+    background-color: black;
     padding-top: 10px;
     text-align: center;
     overflow: hidden;
     padding-bottom: 25px;
 }
 .contact_section_title {
-    font-family: "Consolas", "Courier New", "monospace";
-    text-decoration: underline;
+    font-family: HeadingFont;
     font-size: 32px;
+    margin: 25px;
+    color: white;
+
+    text-decoration: underline;
 }
 .contact_description {
     font-family: "Consolas", "Courier New", "monospace";
     margin-bottom: 10px;
+    color: white;
 }
 
 .email_box_background {
     width: 70%;
     margin-left: auto;
     margin-right: auto;
-    border: 5px solid #FBD2A3;
-    background-color: #FBD2A3;
+    border: 2px solid white;
+    background-color: white;
     max-width: 700px;
 }
 .email_box {
-    background-color: #FACB94;;
+    background-color: black;;
     text-align: center;
     /* margin-left: auto;
     margin-right: auto; */
+    position: relative;
     overflow: hidden;
 }
 
 
 .text_input {
     position: relative;
-    background-color: #E0B582;
-    color: #211602;
+    background-color: #050505;
+    color: lime;
     font-family: "Consolas", "Courier New", "monospace";
     font-size: 16px;
     border: 0px solid black;
-    margin-top: 5px;
+    margin-top: 15px;
+    padding: 10px;
     margin-left: 12.5%;
     margin-right: 12.5%;
-    width: 75%
+    width: 75%;
+    /* border: 2px solid white; */
 }
 .text_input:focus {
     outline: none;
 }
-
 
 .name_field {
     margin-top: 25px;
@@ -58,10 +64,111 @@
     min-height: 300px;
 }
 .submit_button {
-    background-color: #E0B582;
-    color: #211602;
+    background-color: black;
+    color: white;
     margin-top: 10px;
     margin-bottom: 25px;
     font-family: "Consolas", "Courier New", "monospace";
-    border: 1px solid #211602;
+    border: 1px solid white;
+    position: relative;
+}
+.submit_button:hover {
+    color: lime;
+}
+.button_border { 
+    background-color: lime;
+    position: absolute;
+    content: "";
+    transform: scale(1, 1);
+    transition: all 100ms linear;
+    z-index: 4;
+    height: 2px;
+    width: calc(100% + 2px);
+}
+.top3 {
+    left: 0%;
+    top: 0%;
+    transform: translate(-1px, -1px) scaleX(0);
+    height: 1px;
+    width: calc(100% + 1px);
+    transform-origin: center left;
+    transition-delay: 300ms;
+}
+.right3 {
+    left: 100%;
+    top: 0%;
+    transform: translate(0px, -1px) scaleY(0);
+    height: calc(100% + 1px);
+    width: 1px;
+    transform-origin: top center;
+    transition-delay: 200ms;
+}
+
+.bot3 {
+    left: 0%;
+    top: 100%;
+    width: calc(100% + 1px);
+    transform: scaleX(0);
+    height: 1px;
+    transform-origin: center right;
+    transition-delay: 100ms;
+}
+.left3 {
+    top: 0%;
+    left: 0%;
+    width: 1px;
+    height: calc(100% + 1px);
+    transform: translate(-1px, 0px) scaleY(0);
+    transform-origin: bottom center;
+    transition-delay: 0ms;
+}
+
+.submit_button:hover .top3 {
+    transform: translate(-1px, -1px) scaleX(1);
+    transition-delay: 0ms;
+}
+.submit_button:hover .right3 {
+    transform: translate(0px, -1px) scaleY(1);
+    transition-delay: 100ms;
+}
+.submit_button:hover .bot3 {
+    transform: scaleX(1);
+    transition-delay: 200ms;
+}
+.submit_button:hover .left3 {
+    transform: translate(-1px, 0px) scaleY(1);
+    transition-delay: 300ms;
+}
+.social_link {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    margin: 25px;
+}
+.link_filter {
+    position: absolute;
+    background-color: lime;
+    mix-blend-mode: multiply;
+    top: -25%;
+    left: -25%;
+    width: 150%;
+    height: 150%;
+    border-radius: 50%;
+    transform: scale(0,0);
+    transition: all 250ms ease-in;
+}
+.link_image {
+    position: relative;
+    filter: invert(1);
+    width: 50px;
+}
+.social_link:hover .link_filter { 
+    transform: scale(1,1);
+}
+@media only screen and (min-width: 700px) {
+    .contact_section_title {
+        text-align: left;
+        text-decoration: none;
+        font-size: 48px;
+    }
 }
