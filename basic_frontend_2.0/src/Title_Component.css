@@ -24,7 +24,7 @@
     content: "";
     background-position: 55% top;
     background-size: cover;
-    background-image: url("images/pirateTower_16px.png");
+    background-image: url("images/pirateTower_8px.png");
     top: 1%;
     left: 1%;
     border: 1px solid lime;
@@ -90,7 +90,7 @@
 
 @keyframes depixelate {
     0% {
-        background-image: url("./images/pirateTower_16px.png");
+        background-image: url("./images/pirateTower_8px.png");
     }
     100% {
         background-image: url("./images/pirateTower_laguna.jpg");
@@ -102,7 +102,7 @@
         background-image:  url("./images/pirateTower_laguna.jpg");
     }
     100% {
-        background-image: url("./images/pirateTower_16px.png");
+        background-image: url("./images/pirateTower_8px.png");
     }
 }
 

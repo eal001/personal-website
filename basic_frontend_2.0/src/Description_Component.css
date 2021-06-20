@@ -36,6 +36,9 @@
     background-color: lime;
     border: 2px solid white;
 }
+.description_button:hover .button_text {
+    color: lime;
+}
 .description_button:focus {
     border: 2px solid lime;
 }
@@ -189,6 +192,11 @@
     .description_text_container {
         margin-left: 10%;
         margin-right: 10%;
+    }
+    .description_section_title {
+        text-align: left;
+        text-decoration: none;
+        font-size: 48px;
     }
     
 }

@@ -88,7 +88,7 @@ const Border_Component = () => {
 
 const Description_Component = () => {
 
-    const [selected, setSelected] = useState(0);
+    const [selected, setSelected] = useState(1);
 
     const handleClick = (num) => {
         setSelected(num);
