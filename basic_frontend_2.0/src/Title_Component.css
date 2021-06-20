@@ -82,7 +82,8 @@
 
 .location_description {
     position: absolute;
-    left: 5%;
+    left: 0%;
+    max-width: 85%;
     padding-top: 5px;
     font-family:  "Consolas", "Courier New", "monospace";
     font-size: 11px;
