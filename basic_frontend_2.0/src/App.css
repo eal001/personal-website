@@ -1,25 +1,23 @@
-.html{
+* {
   margin: 0px;
   padding: 0px;
-  border-radius: 0px;
 }
-.body {
-  margin: 0px;
-  padding: 0px;
-  border-radius: 0px;
-}
-.App {
-  margin: 0px;
-  padding: 0px;
+body {
+  background-color:  #101010;
+  /* overscroll-behavior-y: none;
+  overscroll-behavior-x: none; */
 }
 .main_container {
   width: 100%;
+
   background-color: #101010;
 }
 .main_background {
   background-color: black;
   border-left: 2px solid lime;
   border-right: 2px solid lime;
+  border-bottom: 2px solid lime;
+  margin-bottom: 25px;
   margin-left: 10%;
   margin-right: 10%;
 }

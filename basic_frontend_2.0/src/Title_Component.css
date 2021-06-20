@@ -1,7 +1,7 @@
 @font-face {
     font-family: HeadingFont;
     /* src: url("./fonts/data-latin.ttf"); */
-    src: local("Consolas");
+    src: url("./fonts/WynfordSolid-OVElA.otf");
 }
 
 .title_component {
@@ -63,7 +63,7 @@
     border-color: transparent;
     background-color: transparent;
     color: lime;
-    font-size: 24x;
+    font-size: 24px;
     height: 10%;
     width: 10%;
 }

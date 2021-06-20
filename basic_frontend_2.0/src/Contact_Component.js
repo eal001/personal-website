@@ -110,8 +110,9 @@ const Credits_Section = () => {
         <div className="credit_section">
             <p>Elliot Lee © 2021</p>
             <br />
-            <p>All credit for the artwork, photos, and logos goes to the original creator</p>
+            <p>All credit for artwork, photos, and logos go to the original creator</p>
             <div>Icons made by <a className="art_credit_link" href="https://smashicons.com/" title="Smashicons">Smashicons</a> from <a className="art_credit_link" href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+            <div>Font made by <a className="art_credit_link" href="https://www.fontspace.com/wynford-font-f45789">Fontkong on fontspace.com</a></div>
             <div>BiasML art made by <a className="art_credit_link" href="https://github.com/shantellemeganserafin">Shantelle Serafin</a></ div>
             <div>RateMyLease art made by <a className="art_credit_link" href="https://github.com/jiuchoe4">Jiu Choe</a></div>
         </div>
@@ -120,7 +121,7 @@ const Credits_Section = () => {
 const Contact_Component = () => {
     return (
         <div id="contact" className="contact_component">
-            <h1 className="contact_section_title">Let's Get in Touch!</h1>
+            <h1 className="contact_section_title">Let's Get in Touch !</h1>
             <p className="contact_description">
                 <Typist  avgTypingDelay={40} cursor={CURSOR}>
                     I would love to work together and answer any questions you might have!
