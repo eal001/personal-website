@@ -10,7 +10,7 @@ const CURSOR = {
     hideWhenDone: true,
     hideWhenDoneDelay: TIMEOUT*1.44
 };
-const MY_NAME = "Elliot Lee";
+const MY_NAME = "Elliot OOGOO Lee";
 const SELF_DESCRIPTION = "Student Developer";
 const LOCATION = "Pirate Tower, Laguna Beach, CA."
 const LOC_DESCRIPTION = "A landmark near my home town!"
