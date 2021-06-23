@@ -10,8 +10,10 @@ function App() {
   return (
     <div className="App">
       <div className="main_container">
-        <Title_Component />
-        <Nav_Bar/>
+        <div className="title_background">
+          <Title_Component />
+          <Nav_Bar/>
+        </ div>
         <div className="main_background">
           <Skill_Component />
           <Description_Component />

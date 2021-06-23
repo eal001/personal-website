@@ -14,8 +14,10 @@ const Nav_Bar = () => {
             //console.log( title_height < y) //this is when we execute a style asssignment
             if(title_height < y) {
                 document.getElementById("nav_bar").style.position = "fixed";
+                document.getElementById("nav_bar").style.top = "0px";
             } else {
-                document.getElementById("nav_bar").style.position = "relative";
+                document.getElementById("nav_bar").style.position = "absolute";
+                document.getElementById("nav_bar").style.top = "100%";
             }
         })
     )

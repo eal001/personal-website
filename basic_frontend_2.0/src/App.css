@@ -9,15 +9,24 @@ body {
 }
 .main_container {
   width: 100%;
-
+  position: relative;
   background-color: #101010;
+}
+.title_background {
+  position: relative;
 }
 .main_background {
   background-color: black;
   border-left: 2px solid lime;
   border-right: 2px solid lime;
   border-bottom: 2px solid lime;
+  /* padding-top: 100px; */
   margin-bottom: 25px;
   margin-left: 10%;
   margin-right: 10%;
+}
+@media only screen and (min-width: 700px) {
+  .main_background {
+      padding-top: 100px;
+  }
 }

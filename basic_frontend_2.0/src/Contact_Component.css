@@ -30,7 +30,7 @@
     max-width: 700px;
 }
 .email_box {
-    background-color: black;;
+    background-color: black;
     text-align: center;
     /* margin-left: auto;
     margin-right: auto; */
@@ -48,8 +48,8 @@
     border: 0px solid black;
     margin-top: 15px;
     padding: 10px;
-    margin-left: 12.5%;
-    margin-right: 12.5%;
+    margin-left: auto;
+    margin-right: auto;
     width: 75%;
     /* border: 2px solid white; */
 }
@@ -172,6 +172,62 @@
 .social_link:hover .link_filter { 
     transform: scale(1,1);
 }
+
+.resume_box {
+    position: relative;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.resume_box #view_button {
+    position: relative;
+    font-family: "Consolas", "Courier New", "monospace";
+    color:  white;
+    background-color: black;
+    border: 2px solid white;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin: 25px;
+}
+.resume_box #view_button:hover {
+    color: lime;
+}
+#view_button:hover .top {
+    transform: translate(-2px, -2px) scaleX(1);
+    transition-delay: 0ms;
+}
+#view_button:hover .right {
+    transform: translate(0px, -2px) scaleY(1);
+    transition-delay: 100ms;
+}
+#view_button:hover .bot {
+    transform: scaleX(1);
+    transition-delay: 200ms;
+}
+#view_button:hover .left {
+    transform: translate(-2px, 0px) scaleY(1);
+    transition-delay: 300ms;
+}
+#resume {
+    display: block;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 0px;
+    margin-bottom: 25px;
+    border: none;
+    transition: all 500ms ease-in;
+}
+.resume_box .download_link {
+    display: block;
+    color: lime;
+    font-family: "Consolas", "Courier New", "monospace";
+}
+.resume_box .download_link:hover {
+    font-weight: 1000;
+}
+
+
 .credit_section {
     color: white;
     font-family: "Consolas", "Courier New", "monospace";

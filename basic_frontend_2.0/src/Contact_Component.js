@@ -6,6 +6,7 @@ import LinkedIn from "./images/LinkedIn_logo.png";
 import GitHub from "./images/GitHub_logo.png";
 import DevPost from "./images/Devpost_logo_cropped.png";
 import Instagram  from "./images/Instagram_logo.png";
+import RESUME from "./files/Elliot Lee - Resume.pdf";
 require("dotenv");
 
 const SERVICE_ID = process.env.REACT_APP_EMAILJS_SERVICE_ID;
@@ -105,6 +106,43 @@ const Link_Box = () => {
     )
 }
 
+const Resume_Box = () => {
+
+    const [isOpen, setOpen] = useState(false);
+    const [buttonText, setText] = useState("View Resume");
+
+    const handleView = () => {
+        
+        const resume_view = document.getElementById("resume");
+        const toggle_button = document.getElementById("view_button");
+        if(isOpen) {
+            resume_view.style.border = "none";
+            resume_view.style.height = "0px";
+            setText("View Resume");
+        } else { // not open 
+            resume_view.style.border = "2px solid lime";
+            resume_view.style.height = "90vh";
+            setText("Hide Resume");
+        }
+        setOpen( !isOpen );
+    }
+
+    //console.log(RESUME)
+    return ( 
+        <div className="resume_box">
+            <button id="view_button" onClick={handleView}>
+                {buttonText}
+                <div className="button_border top"></ div>
+                <div className="button_border right"></ div>
+                <div className="button_border bot"></ div>
+                <div className="button_border left"></ div>
+            </button>
+            <embed id="resume" scrolling="auto" src={RESUME}/>
+            {/* <a className="download_link" href={RESUME} download>Download Resume</a> */}
+        </div>
+    )
+}
+
 const Credits_Section = () => {
     return (
         <div className="credit_section">
@@ -118,6 +156,7 @@ const Credits_Section = () => {
         </div>
     )
 }
+
 const Contact_Component = () => {
     return (
         <div id="contact" className="contact_component">
@@ -129,6 +168,7 @@ const Contact_Component = () => {
             </p>
             <Email_Box />
             <Link_Box />
+            <Resume_Box />
             <Credits_Section />
         </div>
     )
